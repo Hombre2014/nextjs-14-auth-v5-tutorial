@@ -1,4 +1,4 @@
-# Auth V5
+b# Auth V5
 
 > Next Auth V5 Advanced guide
 
@@ -24,14 +24,14 @@
 
 You will need to create a `.env` file in the root of the project and add the following environment variables:
 
-DATABASE_URL=
-DIRECT_URL=
-AUTH_SECRET=
-GITHUB_CLIENT_ID=
-GITHUB_CLIENT_SECRET=
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-RESEND_API_KEY=
+DATABASE_URL=</br>
+DIRECT_URL=</br>
+AUTH_SECRET=</br>
+GITHUB_CLIENT_ID=</br>
+GITHUB_CLIENT_SECRET=</br>
+GOOGLE_CLIENT_ID=</br>
+GOOGLE_CLIENT_SECRET=</br>
+RESEND_API_KEY=</br>
 NEXT_PUBLIC_APP_URL="http://localhost:3000" or your production URL
 
 ## Live Demo
