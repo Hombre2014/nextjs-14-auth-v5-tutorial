@@ -1,4 +1,4 @@
-b# Auth V5
+# Auth V5
 
 > Next Auth V5 Advanced guide
 
