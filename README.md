@@ -36,11 +36,11 @@ NEXT_PUBLIC_APP_URL="http://localhost:3000" or your production URL
 
 ## Live Demo
 
-[Live Demo Link](https://nextjs-14-auth-v5-tutorial.vercel.app/)
+[Auth v5 demo](https://nextjs-14-auth-v5-tutorial.vercel.app/)
 
 ## Deployment
 
-- Using [Verce](https://vercel.com)
+- Using [Vercel](https://vercel.com)
 
 ## Author
 
