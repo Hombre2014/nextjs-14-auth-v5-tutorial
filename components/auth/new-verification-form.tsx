@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { BeatLoader } from "react-spinners";
 import { useSearchParams } from "next/navigation";
 
@@ -10,6 +10,7 @@ import { FormError } from "@/components/form-error";
 import { FormSuccess } from "@/components/form-success";
 
 export const NewVerificationForm = () => {
+  const hasSubmitted = useRef(false);
   const [error, setError] = useState<string | undefined>();
   const [success, setSuccess] = useState<string | undefined>();
 
@@ -35,8 +36,13 @@ export const NewVerificationForm = () => {
       })
   }, [token, success, error]);
 
+
   useEffect(() => {
-    onSubmit();
+    if (!hasSubmitted.current) {
+      console.log("submitting")
+      onSubmit();
+      hasSubmitted.current = true;
+    }
   }, [onSubmit]);
 
   return (
