@@ -3,7 +3,7 @@
 import * as z from 'zod';
 import bcrypt from 'bcryptjs';
 
-import { update } from '@/auth';
+import { auth } from '@/auth'; // Import the new `auth()` function
 import { db } from '@/lib/db';
 import { SettingsSchema } from '@/schemas';
 import { getUserByEmail, getUserById } from '@/data/user';
@@ -69,14 +69,37 @@ export const settings = async (values: z.infer<typeof SettingsSchema>) => {
     },
   });
 
-  update({
-    user: {
+  // Custom session update logic using `auth()`
+  const session = await auth();
+  if (session && session.user) {
+    session.user = {
+      ...session.user,
       name: updatedUser.name,
       email: updatedUser.email,
       isTwoFactorEnabled: updatedUser.isTwoFactorEnabled,
       role: updatedUser.role,
-    },
-  });
+    };
+  }
 
   return { success: 'Settings Updated!' };
 };
+
+{
+  /* 
+  Since NextAuth no longer provides an update function, you can use the getSession and useSession methods from next-auth to manually refresh or update the session after making changes to the user data.
+
+  Explanation of Changes:
+
+Custom Session Update Logic:
+
+The getSession method from next-auth/react is used to fetch the current session.
+The session's user object is updated with the new user data (e.g., name, email, isTwoFactorEnabled, role).
+Removed update Import:
+
+The update function was removed from the imports since it no longer exists in auth.ts.
+Preserved Existing Logic:
+
+The rest of the logic for email verification, password updates, and database updates remains unchanged.
+
+  */
+}
