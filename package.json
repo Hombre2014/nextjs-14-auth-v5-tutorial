@@ -42,7 +42,7 @@
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
     "@types/bcryptjs": "^2.4.6",
-    "@types/node": "^20",
+    "@types/node": "^22",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/uuid": "^9.0.7",
@@ -55,6 +55,6 @@
     "typescript": "^5"
   },
   "engines": {
-    "node": "22.x"
+    "node": ">=20 <23"
   }
 }
