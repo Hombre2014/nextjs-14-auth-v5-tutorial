@@ -10,6 +10,7 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
+    "editorconfig": "^3.0.2",
     "@auth/prisma-adapter": "^2.8.0",
     "@hookform/resolvers": "^3.3.3",
     "@prisma/client": "^5.7.1",
@@ -24,7 +25,7 @@
     "bcryptjs": "^2.4.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
-    "glob": "^13.0.0",
+    "glob": "^13.0.6",
     "js-beautify": "^1.15.4",
     "next": ">=16.1.6",
     "next-auth": "^5.0.0-beta.30",
@@ -56,6 +57,7 @@
     "prisma": "^5.7.1",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
+    ,"@typescript-eslint/typescript-estree": "^8.57.1"
   },
   "engines": {
     "node": ">=20 <23"
