@@ -26,7 +26,7 @@
     "clsx": "^2.0.0",
     "glob": "^13.0.0",
     "js-beautify": "^1.15.4",
-    "next": ">=16.1.6",
+    "next": ">=16.1.7",
     "next-auth": "^5.0.0-beta.30",
     "next-themes": "^0.2.1",
     "react": "^18",
