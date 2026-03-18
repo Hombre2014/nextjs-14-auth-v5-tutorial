@@ -1,7 +1,10 @@
 {
-  "name": "auth-tutorial",
-  "version": "0.1.0",
+  "name": "nextjs-14-auth-v5-tutorial",
+  "version": "1.7.0",
   "private": true,
+  "overrides": {
+    "minimatch": "^10.2.4"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,7 +13,6 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
-    "editorconfig": "^3.0.2",
     "@auth/prisma-adapter": "^2.8.0",
     "@hookform/resolvers": "^3.3.3",
     "@prisma/client": "^5.7.1",
@@ -44,6 +46,7 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
+    "editorconfig": "^3.0.2",
     "@types/bcrypt": "^5.0.2",
     "@types/bcryptjs": "^2.4.6",
     "@types/node": "^22",
@@ -56,8 +59,8 @@
     "postcss": "^8",
     "prisma": "^5.7.1",
     "tailwindcss": "^3.3.0",
-    "typescript": "^5"
-    ,"@typescript-eslint/typescript-estree": "^8.57.1"
+    "typescript": "^5",
+    "@typescript-eslint/typescript-estree": "^8.57.1"
   },
   "engines": {
     "node": ">=20 <23"
