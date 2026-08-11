@@ -17,7 +17,7 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
-    "@auth/prisma-adapter": "^2.8.0",
+    "@auth/prisma-adapter": "^2.11.3",
     "@hookform/resolvers": "^3.3.3",
     "@prisma/client": "^5.7.1",
     "@radix-ui/react-avatar": "^1.0.4",
